@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'food/css/styles.css' %}">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header_inner">
+            <div class="header_logo">healthy choice</div>
+
+     <nav class="nav">
+        <a class="nav_link" href="@">About</a>
+        <a class="nav_link" href="@">Work</a>
+        <a class="nav_link" href="@">Contact</a>
+     </nav>
+    </div>
+    </div>
+
+</header>
+<div class="container">
+    {% block content %}
+{% endblock %}
+</div>
+
+</body>
+</html>

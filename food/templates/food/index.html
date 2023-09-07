@@ -1,0 +1,15 @@
+{% extends 'food/base.html' %}
+
+{% block content %}
+    <ul class="list-goods">
+        {% for g in goods %}
+            <li><h2>{{ g.name }}</h2>
+            <p>{{g.price}}</p>
+            <div class="clear"></div>
+            <p class="link_to_order"><a href="#">Заказать</a></p>
+            </li>
+        {% endfor %}
+
+</ul>
+
+{% endblock %}
